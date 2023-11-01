@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>campus lab</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+                <label for="fecha">Elija una fecha:  </label>
+                <input type="date" name="fecha" id="fecha">
+                <br><br>
+                <label for="archivo">Elija un fichero: </label>
+                <input type="file" name="archivo" id="archivo" accept=".png, .jpg, .gif, .">
+                <br><br>
+                <input type="radio" name="procesador" id="AMD" value="AMD">
+                <label for="procesador">AMD</label>
+                <input type="radio" name="procesador" id="Intel i5" value="Intel i5" checked>
+                <label for="procesador">Intel i5</label>
+                <input type="radio" name="procesador" id="Intel i7" value="Intel i7">
+                <label for="procesador">Intel i7</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Indique sus preferecian por favor</legend>
+            <input type="radio" name="subject" id="AMD" value="AMD">
+            <label for="subject">Matematicas</label>
+            <input type="radio" name="subject" id="Historia" value="Historia" checked>
+            <label for="subject">Historia</label>
+            <input type="radio" name="subject" id="Geografia" value="Geografia">
+            <label for="subject">Geografia</label>
+            <input type="radio" name="subject" id="lengua" value="lengua">
+            <label for="subject">Lengua</label>
+            <br>
+            <label for="fnombre">Nombre</label>
+            <input type="text" name="fnombre" id="fnombre" maxlength="15" minlength="1" size="25" pattern="[a-zA-Z]{1-15}">
+            <br><br>
+            <label for="fapellido">Apellido</label>
+            <input type="text" name="fapellido" id="fapellido" maxlength="15" minlength="1" size="25" pattern="[a-zA-Z]{1-15}">
+            <br><br>
+            <label for="fapellido">Apellido</label>
+            <input type="text" name="fdireccion" id="fdireccion" maxlength="15" minlength="1" size="25" pattern="[a-zA-Z]{1-15}">
+            <br><br>
+            <label for="colofav">Elija un color: </label>
+            <input type="color" name="colorfav" id="colorfav">
+            <br><br>
+            <label for="comentarios">Escriba sus comentarios: </label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="8">Utilice este cuadro para escribir</textarea>
+            <br>
+            <label for="fecha">Elija una fecha:  </label>
+            <input type="date" name="fecha" id="fecha">
+            <br><br>
+            <label for="language"></label>
+                <select name="language" id="language">                                                                                                                
+                    <option value="english">English</option>  
+                    <option value="spanish">Spanish</option> 
+                    <option value="japanese">Japanese</option>  
+                    <option value="russian">Russian</option>  
+                    <option value="german">German</option>  
+                    <option value="french">French</option> 
+                    <option value="swedish">Swedish</option> 
+                </select>
+            <br><br>
+            <label for="hora">Elija una hora : </label>
+            <input type="time" name="fecha" id="fecha">
+            <br><br>
+            <label for="archivo">Elija un fichero: </label>
+                <input type="file" name="archivo" id="archivo" accept=".png, .jpg, .gif, .">
+            <br><br>
+            <input type="radio" name="sexo" id="Mujer" value="Mujer">
+            <label for="sexo">Mujer</label>
+            <input type="radio" name="sexo" id="Hombre" value="Hombre" checked>
+            <label for="sexo">Hombre</label>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
