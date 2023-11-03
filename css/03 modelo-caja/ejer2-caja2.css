@@ -1,0 +1,19 @@
+main {
+    text-align: center;
+}
+header {
+    background-color: brown;
+    padding-inline: 100px;
+    padding-bottom: 290px;
+    color: white;
+    
+}
+
+.img {
+    background-color: orangered;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}

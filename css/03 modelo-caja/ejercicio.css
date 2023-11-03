@@ -1,0 +1,25 @@
+main{ border: 5px solid red;}
+.div1 { 
+    border: 5px solid green;
+    display: inline-block;
+    width: 50%;
+    height: 10% ;
+    margin: 10px;
+    text-shadow: 1px 1px 1px darkgoldenrod;    
+}
+.div2 { 
+    border: 5px solid blue;
+    display: inline-block;
+    width: 50%;
+    height: 10% ;
+    margin: 5px 60px;
+    text-shadow: 1px 1px 1px darkgoldenrod;    
+}
+.div3 { 
+    border: 5px solid orange;
+    display: inline-block;
+    width: 50%;
+    height: 10% ;
+    margin: 5px 120px;
+    text-shadow: 1px 1px 1px darkgoldenrod;    
+}
