@@ -1,0 +1,11 @@
+div {
+    height: 100p;
+    width: 100px;
+    margin: 15px;
+    padding: 20px;
+    
+    border: 2px solid black;
+    border-radius: 10px 15px 50px;
+    background-image: 
+    linear-gradient(blue, red, yellow);
+}

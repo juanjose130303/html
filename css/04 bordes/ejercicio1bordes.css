@@ -1,0 +1,48 @@
+main {
+    text-align: center;
+}
+.primero {
+    height: 5px;
+    width: 900px;
+    margin: 15px;
+    padding: 50px;
+    
+    
+    border-style:dotted dashed ;
+    border-width: 5px; 
+    border-color: green orange red blue;}
+
+.segundo {
+    height: 5px;
+    width: 900px;
+    margin: 15px;
+    padding: 50px;
+    
+    
+    border-style:solid ;
+    border-width: 10px; 
+    border-color: skyblue black pink;}
+    
+    nav {
+        height: 50px;
+        width: 950px;
+        margin: 15px;
+        padding: 50px;
+
+        border-style:dotted dashed ;
+        border-width: 5px; 
+        border-color: green orange red blue;
+    }
+    .tercero {
+        height: 5px;
+        width: 900px;
+        margin: -40px;
+        padding: 50px;
+        
+        border-style:solid ;
+        border-width: 10px; 
+        border-color: skyblue black pink;}
+
+    .cuarto {
+        
+    }
