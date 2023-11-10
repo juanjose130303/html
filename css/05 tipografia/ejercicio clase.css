@@ -1,0 +1,221 @@
+#serif {
+    font-family: "Times New Roman", Times, serif;
+  /* Se especifica la fuente serif, en este caso, Times New Roman */
+}
+
+#serif {
+    font-family: "Garamond", serif;
+  /* Se especifica la fuente Garamond para los encabezados */
+}
+
+#serif {
+    font-family: Georgia, serif;
+  /* Se especifica la fuente Georgia para los párrafos */
+}
+
+#san_serif {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se especifica una fuente sans-serif para el cuerpo del documento */
+}
+
+#san_serif {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Se especifica una fuente sans-serif para los encabezados */
+}
+
+#san_serif {
+    font-family: Calibri, Arial, sans-serif;
+    /* Se especifica una fuente sans-serif para los párrafos */
+}
+
+#monoespaciada {
+    font-family: "Courier New", Courier, monospace;
+    /* Se especifica una fuente monoespaciada para el cuerpo del documento */
+}
+
+#monoespaciada {
+    font-family: "Consolas", "Monaco", monospace;
+    /* Se especifica una fuente monoespaciada para los elementos de código */
+}
+#peso_fuente {
+    font-family: "Arial", sans-serif;
+    /* Se especifica la fuente base */
+}
+
+#peso_fuente {
+    font-weight: normal;
+    /* Peso normal (equivalente a 400) para el encabezado */
+}
+
+#peso_fuente {
+    font-weight: bold;
+    /* Peso negrita (equivalente a 700) para los párrafos */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace;
+    font-weight: 600;
+    /* Peso seminegrita (equivalente a 600) para una clase específica */
+}
+
+valor_peso_f {
+    font-family: "Arial", sans-serif;
+}
+
+p {
+    font-weight: 100; /* Ultraligero o thin */
+}
+
+.medium-text {
+    font-weight: 500; /* Seminegrita o medium */
+}
+
+.bold-text {
+    font-weight: bold; /* Negrita o bold (equivalente a 700) */
+}
+
+.extrabold-text {
+    font-weight: 800; /* Extrabold o ultranegrilla */
+}
+
+.black-text {
+    font-weight: 900; /* Ultrapesado o black */
+}
+
+#interlineado {
+    line-height: 3; /* Esto establece un interlineado de 1.5 veces la altura de la línea */
+}
+
+#font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Se especifica una lista de fuentes prioritarias */
+}
+
+#font {
+    font-family: "Georgia", serif;
+    /* Para los encabezados, se especifica una fuente diferente */
+}
+
+#font {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    /* Para los párrafos, se proporciona otra lista de fuentes */
+}
+#size {
+    font-size: 16px; /* Tamaño de fuente para el cuerpo del documento */
+}
+
+#size {
+    font-size: 2em; /* Tamaño de fuente para encabezados */
+}
+
+#size {
+    font-size: 14px; /* Tamaño de fuente para párrafos */
+}
+
+.small-text {
+    font-size: 12px; /* Tamaño de fuente para elementos con la clase .small-text */
+}
+
+#medidas_absolutas {
+    font-size: 16px; /* Tamaño de fuente para el cuerpo del documento */
+}
+
+#medidas_absolutas {
+    font-size: 24px; /* Tamaño de fuente para encabezados en píxeles */
+    margin-bottom: 20px; /* Margen inferior en píxeles */
+}
+
+#medidas_absolutas {
+    font-size: 18px; /* Tamaño de fuente para párrafos en píxeles */
+    line-height: 1.5; /* Altura de línea en relación con el tamaño de fuente en píxeles */
+}
+
+#fuentes_relativas {
+    font-size: 16px; /* Tamaño de fuente base para el cuerpo del documento */
+}
+
+#fuentes_relativas {
+    font-size: 1.5em; /* Tamaño de fuente para encabezados en relación con el tamaño de fuente del padre */
+    margin-bottom: 1.2em; /* Margen inferior en relación con el tamaño de fuente del padre */
+}
+
+#fuentes_relativas {
+    font-size: 1.2em; /* Tamaño de fuente para párrafos en relación con el tamaño de fuente del padre */
+    line-height: 1.5; /* Altura de línea en relación con el tamaño de fuente actual */
+}
+
+.small-text {
+    font-size: 0.8em; /* Tamaño de fuente más pequeño utilizando em */
+}
+
+#fuentes_Especificas {
+    font-size: 16px; /* Tamaño de fuente base para el cuerpo del documento */
+}
+
+#fuentes_Especificas {
+    font-size: 2rem; /* Tamaño de fuente para encabezados en rem (unidades relativas al tamaño de fuente base del documento) */
+    margin-bottom: 1.2ch; /* Margen inferior en relación con el tamaño del carácter "0" (cero) */
+}
+
+#fuentes_Especificas {
+    font-size: 1.2em; /* Tamaño de fuente para párrafos en em (unidades relativas al tamaño de fuente del elemento padre) */
+    line-height: 1.5; /* Altura de línea en relación con el tamaño de fuente actual */
+}
+
+.small-text {
+    font-size: 0.8ex; /* Tamaño de fuente más pequeño utilizando ex (altura de la "x" minúscula) */
+}
+
+#estilos_fuente {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+#estilos_fuente {
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Texto en cursiva */
+    font-size: 2rem;
+}
+
+#estilos_fuente {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.uppercase-text {
+    font-variant: small-caps; /* Variante de mayúsculas pequeñas */
+}
+
+#inclinado {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+#inclinado {
+    font-style: oblique 45deg; /* Inclinación oblicua de 45 grados */
+    font-size: 2rem;
+}
+
+#inclinado {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#fuente_negrita {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+#fuente_negrita {
+    font-weight: bold; /* Fuente en negrita */
+    font-size: 2rem;
+}
+
+#fuente_negrita {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.light-text {
+    font-weight: lighter; /* Fuente más ligera */
+}
