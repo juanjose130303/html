@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.CARD{
+    display: flex;
+    justify-content: space-around;
+}
+.cardHead{
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+.cardFoot{
+    height: 30px;
+    text-align: center;
+    background-color:darkgray;
+    color: white;
+}
+.cardBody{
+    flex-basis: auto;
+    line-height: 40px;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
