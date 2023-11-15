@@ -1,0 +1,32 @@
+body {
+    background-color: beige;
+}
+
+.item {
+    border: 1px solid rgb(20, 69, 69);
+    background-color: gray;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    /*height: 120px;*/
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+
+.container {
+    
+    background-color: #ccc;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap ;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 600px;
+    align-content: center;
+}
