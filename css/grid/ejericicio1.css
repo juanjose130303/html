@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.primera {
+    background-color: #ccc;
+    margin: auto;
+    display: grid;
+    gap: 3px;
+    width: 100%;
+    height: 250px;
+    grid-template-columns: auto auto auto;
+}
+
+.uno {
+    background-color: orangered;
+}
+
+.dos {
+    background-color: darkcyan;
+}
+
+.tres {
+    background-color: rgb(194, 5, 194);
+}
+
+.segunda {
+    background-color: #ccc;
+    margin: auto;
+    display: grid;
+    gap: 3px;
+    width: 100%;
+    height: 250px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50%;
+}
+
+.first {
+    background-color: orangered;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.second {
+    background-color: orangered;
+}
+
+.three {
+    background-color: orangered;
+}
+
+.four {
+    background-color: darkcyan;
+}
+
+.five {
+    background-color: rgb(194, 5, 194)
+}
+.six {
+    background-color: rgb(194, 5, 194)
+}
