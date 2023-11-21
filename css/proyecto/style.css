@@ -98,7 +98,6 @@ body {
 }
 
 .boton1 {
-    display: inline-block;
     padding: 11px 35px;
     background-color: #ce967b;
     color: #f9fafc;
@@ -111,11 +110,23 @@ body {
 
 .hamburguesas {
     padding: 100px 0;
+    height: fit-content;
     background-color: #e1e2e6;
+    height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamañofoto {
+    width: 100%;
+    height: 100%;
 }
 .hamburguesas-cont {
     text-align: center;
+    height: 75vh;
 }
 
 .hamburguesas-cont h2 {
@@ -134,10 +145,11 @@ body {
     margin-bottom: 35px;
 }
 
-.hamburguesas-grupo {
-    display: flex;
+.hamburguesa-grupo {
+    display: grid;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    height: fit-content;
 }
 
 .hamburguesa1{
