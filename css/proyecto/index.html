@@ -1,201 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messi's</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Elo Boost Services</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            transition: background-color 0.5s;
+        }
+
+        header, nav, section, footer {
+            padding: 20px;
+            transition: padding 0.5s;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.5s;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            transition: padding 0.5s;
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #ddd;
+        }
+
+        section a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+
+        section a:hover {
+            color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.5s, padding 0.5s;
+            clear: both;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: background-color 0.5s, padding 0.5s;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+            transition: color 0.5s;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #fff;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="menu container">
-            <nav class="navbarra">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="logo" >logo</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="../proyecto/imagenes/cuernos.png" class="menu-icono" alt="">
-            </label>
-        </div>
-    
-                
-        <div class="header-cont container">
-            <h1>messi's</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni illum consequatur in recusandae, quos possimus eius, animi natus exercitationem reiciendis quod officiis illo qui vero neque aspernatur obcaecati aperiam sequi.</p>
-            <a href="#" class="boton1">Informacion</a>
-        </div>
+
+    <header>
+        <h1>Elo Boost Services</h1>
     </header>
 
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a href="#subpage1">Subpágina 1</a>
+        <a href="#subpage2">Subpágina 2</a>
+    </nav>
 
-    <section class="hamburguesas">
-
-        <img class="hamburguesa-img" sc="../proyecto/imagenes/hmburguesa.jpg" alt="">
-
-        <div class="hamburguesas-cont container">
-
-            <h2>hamburguesas</h2>
-            <P class="text-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea unde voluptas veritatis harum, nulla suscipit repellat, excepturi fugiat perspiciatis veniam quis impedit molestiae obcaecati! Ipsa expedita ea labore? Laborum?
-            </P>
-
-            <div class="hamburguesa-grupo">
-                <div class="hamburguesa1">
-                <img class="tamañofoto" src="../proyecto/imagenes/hamburguesa-grupo.png" alt="">
-                <h3>hamburguesa Lorem </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi tempore ut sit magni quaerat culpa corporis asperiores, ullam, consectetur dolores repellendus porro nulla sint officiis ad modi eos sunt?</p>
-                </div>
-
-                <div class="hamburguesa1">
-                    <img class="tamañofoto" src="../proyecto/imagenes/hamburguesa2.png" alt="">
-                    <h3>hamburguesa Lorem </h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi tempore ut sit magni quaerat culpa corporis asperiores, ullam, consectetur dolores repellendus porro nulla sint officiis ad modi eos sunt?</p>
-                </div>
-
-                <div class="hamburguesa1">
-                    <img class="tamañofoto" src="../proyecto/imagenes/hamburguesa3.png" alt="">
-                    <h3>hamburguesa Lorem </h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi tempore ut sit magni quaerat culpa corporis asperiores, ullam, consectetur dolores repellendus porro nulla sint officiis ad modi eos sunt?</p>
-                </div>
-            </div>
-            
-        </div>
-        <a href="#" class="boton1">Informacion</a>
-
+    <section id="home">
+        <h2>Bienvenido a Elo Boost Services</h2>
+        <p>Mejoramos tu clasificación en tus juegos favoritos.</p>
     </section>
 
-    <main class="servicios">
-        <div class="services-cont container">
-            <h2>Nuestros servicios</h2>
-            <div>
-                <div class="services-group">
-                    <div class="services1">
-                        <img src="../proyecto/imagenes/icon1.svg" alt="s">
-                        <h3>Servicio 1</h3>
-                    </div>
-                    <div class="services1">
-                        <img src="../proyecto/imagenes/icon2.svg" alt="s">
-
-                        <h3>Servicio 2</h3>
-
-                    </div>
-                    <div class="services1">
-                        <img src="../proyecto/imagenes/icon3.svg" alt="s">
-
-                        <h3>Servicio 3</h3>
-
-                    </div>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laudantium molestias dolores perferendis, recusandae aliquam cum fuga, exercitationem iusto qui nihil est, quo odio ducimus ipsum temporibus impedit totam eveniet.</p>
-
-            <a href="#" class="boton1">Informacion</a>
-        </div>
-    </main>
-
-
-
-    <section class="general">
-
-        <div class="genreal1">
-            <h2>messi campeon</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iste odit atque perspiciatis impedit repellat sint delectus eveniet placeat deserunt aut modi praesentium natus eos voluptate doloribus, aliquid earum debitis?</p>
-            <a href="#" class="boton1">Informacion</a>
-        </div>
-        <div class="general2"></div>
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos servicios de Elo Boost para juegos populares, incluyendo League of Legends, Dota 2, y más.</p>
+        <a href="services.html">Descubre más sobre nuestros servicios</a>
     </section>
 
-    <section class="general">
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o consulta? ¡Contáctanos!</p>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-        <div class="general3"></div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-        <div class="genreal1">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-            <h2>messi campeon</h2>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iste odit atque perspiciatis impedit repellat sint delectus eveniet placeat deserunt aut modi praesentium natus eos voluptate doloribus, aliquid earum debitis?</p>
-            <a href="#" class="boton1">Informacion</a>
-        </div>
-        
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="contactanos.html">¿Quieres más opciones de contacto? Haz clic aquí.</a>
     </section>
 
-
-    <section class="blog container">
-
-        <h2>blog</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id non facere aliquam maiores temporibus voluptates aliquid iusto distinctio rerum quasi!</p>
-
-        <div class="blog-cont">
-            <div class="blog1">
-                <img src="../proyecto/imagenes/blog1.jpg" alt="">
-                <h3>blog 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fuga necessitatibus? Numquam, officiis magni ipsum explicabo ea nihil corrupti possimus?</p>
-            </div>
-
-            <div class="blog1">
-                <img src="../proyecto/imagenes/blog2.jpg" alt="">
-                <h3>blog 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fuga necessitatibus? Numquam, officiis magni ipsum explicabo ea nihil corrupti possimus?</p>
-            </div>
-
-            <div class="blog1">
-                <img src="../proyecto/imagenes/blog3.jpg" alt="">
-                <h3>blog 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fuga necessitatibus? Numquam, officiis magni ipsum explicabo ea nihil corrupti possimus?</p>
-            </div>
-        </div>
-        <a href="#" class="boton1">Informacion</a>
+    <section id="subpage1">
+        <h2>Subpágina 1</h2>
+        <p>Descubre contenido exclusivo en nuestra primera subpágina.</p>
+        <img src="tu-imagen-subpage1.jpg" alt="Imagen de Subpágina 1">
     </section>
-    
-    <footer class="footer">
 
-        <div class="footer-cont container">
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
+    <section id="subpage2">
+        <h2>Subpágina 2</h2>
+        <p>Explora más en nuestra segunda subpágina llena de sorpresas.</p>
+        <img src="tu-imagen-subpage2.jpg" alt="Imagen de Subpágina 2">
+    </section>
 
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-        </div>
-        
+    <footer>
+        <p>&copy; 2023 Elo Boost Services. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
