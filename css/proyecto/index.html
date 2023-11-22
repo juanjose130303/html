@@ -23,6 +23,22 @@
             background-color: #333;
             color: #fff;
             text-align: center;
+            position: relative; /* Añadido para establecer una posición relativa */
+            overflow: hidden; /* Añadido para ocultar el desbordamiento de la imagen animada */
+        }
+
+        .animated-header {
+            height: 100vh;
+            background-image: url('../proyecto/kaisa.gif');
+            background-size: cover;
+            background-position: center;
+            animation: moveBackground 20s linear infinite;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1; /* Añadido para colocar la imagen detrás del contenido */
         }
 
         nav {
@@ -116,12 +132,25 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 0;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
+        
+
+        <div class="animated-header">cambiar esto</div> <!-- Agregado para la imagen en movimiento -->
         <h1>Elo Boost Services</h1>
+        
     </header>
 
     <nav>
