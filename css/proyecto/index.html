@@ -56,10 +56,33 @@
             transition: color 0.5s;
         }
 
+        nav a:hover {
+            color: #4CAF50;
+        }
+
         section {
-            padding: 20px;
+            padding: 50px 20px; /* Aumenté el espacio de relleno para una apariencia más espaciosa */
             text-align: center;
             transition: padding 0.5s;
+        }
+
+        section#home {
+            background-image: url('tu-imagen-de-fondo.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        section#home h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        section#home p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         #subpage2 {
@@ -202,6 +225,70 @@
         .game-guide video:hover {
             transform: scale(1.05);
         }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto; /* Alinear al centro horizontalmente */
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .search-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-box label {
+            display: block;
+            margin-bottom: 10px;
+            color: #4CAF50;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.5s;
+        }
+
+        .search-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #fff;
+            transition: background-color 0.5s, color 0.5s;
+            margin-bottom: 10px;
+            outline: none;
+        }
+
+        .search-box input[type="text"]:focus {
+            background-color: #333;
+        }
+
+        .search-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            outline: none;
+        }
+
+        .search-box button:hover {
+            background-color: #45a049;
+        }
+
+        .search-box button:active {
+            transform: scale(0.95);
+        }
     </style>
 </head>
 <body>
@@ -228,13 +315,17 @@
         <p>Ofrecemos servicios de Elo Boost de cuentas de League of Legends.</p>
         <a href="services.html">Descubre más sobre nuestros servicios</a>
     </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta o consulta? ¡Contáctanos!</p>
-        
-        <a href="contactanos.html">¿Quieres más opciones de contacto? Haz clic aquí.</a>
+    
+    <section id="search-section" class="search-box">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <label for="search">Busca lo que necesites</label>
+            <input type="text" id="search" name="q" placeholder="Escribe aquí">
+            <button type="submit">Buscar</button>
+        </form>
     </section>
+    
+
+    
 
     <!-- Añadir esto en la sección correspondiente a la Subpágina 1 -->
     <section id="subpage1">
@@ -303,6 +394,13 @@
                 </ul>
             </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o consulta? ¡Contáctanos!</p>
+        
+        <a href="contactanos.html">¿Quieres más opciones de contacto? Haz clic aquí.</a>
     </section>
 
     <footer>
