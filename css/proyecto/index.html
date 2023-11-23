@@ -23,22 +23,24 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            position: relative; /* Añadido para establecer una posición relativa */
-            overflow: hidden; /* Añadido para ocultar el desbordamiento de la imagen animada */
+            position: relative;
+            overflow: hidden;
         }
 
-        .animated-header {
-            height: 100vh;
-            background-image: url('../proyecto/kaisa.gif');
-            background-size: cover;
-            background-position: center;
-            animation: moveBackground 20s linear infinite;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1; /* Añadido para colocar la imagen detrás del contenido */
+        #logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #logo {
+            font-size: 2em;
+            color: #4CAF50;
+            transition: color 0.5s;
+            cursor: pointer;
+        }
+
+        #logo:hover {
+            color: #45a049;
         }
 
         nav {
@@ -60,29 +62,60 @@
             transition: padding 0.5s;
         }
 
-        section h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #4CAF50;
-            text-transform: uppercase;
-        }
+        #subpage2 {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 0;
+}
 
-        section p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-            color: #ddd;
-        }
+.game-guide {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
 
-        section a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.5s;
-        }
+.game-guide h3 {
+    color: #4CAF50;
+}
 
-        section a:hover {
-            color: #45a049;
-        }
+.game-guide p {
+    margin-bottom: 20px;
+}
+
+.game-guide ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.game-guide ul li {
+    width: calc(50% - 20px); /* Ajustar el ancho de los elementos en pantallas grandes */
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .game-guide ul li {
+        width: 100%; /* Cambiar a un diseño de una columna en pantallas más pequeñas */
+    }
+}
+
+.game-guide video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.game-guide video:hover {
+    transform: scale(1.05);
+}
+
+
+
 
         footer {
             background-color: #333;
@@ -97,7 +130,7 @@
             max-width: 600px;
             margin: 0 auto;
             background-color: #333;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             margin-top: 20px;
             transition: background-color 0.5s, padding 0.5s;
@@ -141,24 +174,48 @@
                 background-position: 100% 0;
             }
         }
+
+        /* Agregado para la galería de videos en la Subpágina 1 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .game-guide video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .game-guide video:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
 
     <header>
-        
-
-        <div class="animated-header">cambiar esto</div> <!-- Agregado para la imagen en movimiento -->
-        <h1>Elo Boost Services</h1>
-        
+        <h1 id="logo">Elo Boost Services</h1>
     </header>
 
     <nav>
         <a href="#home">Inicio</a>
         <a href="#services">Servicios</a>
-        <a href="#contact">Contacto</a>
-        <a href="#subpage1">Subpágina 1</a>
-        <a href="#subpage2">Subpágina 2</a>
+        <a href="#contact.html">Contacto</a>
+        <a href="#subpage1">Contenido Exclusivo</a>
+        <a href="#subpage2">Exploracion Sorprendente</a>
     </nav>
 
     <section id="home">
@@ -168,38 +225,84 @@
 
     <section id="services">
         <h2>Nuestros Servicios</h2>
-        <p>Ofrecemos servicios de Elo Boost para juegos populares, incluyendo League of Legends, Dota 2, y más.</p>
+        <p>Ofrecemos servicios de Elo Boost de cuentas de League of Legends.</p>
         <a href="services.html">Descubre más sobre nuestros servicios</a>
     </section>
 
     <section id="contact">
         <h2>Contacto</h2>
         <p>¿Tienes alguna pregunta o consulta? ¡Contáctanos!</p>
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
+        
         <a href="contactanos.html">¿Quieres más opciones de contacto? Haz clic aquí.</a>
     </section>
 
+    <!-- Añadir esto en la sección correspondiente a la Subpágina 1 -->
     <section id="subpage1">
-        <h2>Subpágina 1</h2>
+        <h2>Contenido Exclusivo</h2>
         <p>Descubre contenido exclusivo en nuestra primera subpágina.</p>
-        <img src="tu-imagen-subpage1.jpg" alt="Imagen de Subpágina 1">
+        <div class="gallery">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+
+            <video controls>
+                <source src="video4.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+            
+        </div>
     </section>
 
     <section id="subpage2">
-        <h2>Subpágina 2</h2>
-        <p>Explora más en nuestra segunda subpágina llena de sorpresas.</p>
-        <img src="tu-imagen-subpage2.jpg" alt="Imagen de Subpágina 2">
+        <div class="container">
+            <h2>Exploración Sorprendente</h2>
+            <p>Explora más en nuestra segunda subpágina llena de sorpresas.</p>
+
+            <div class="game-guide">
+                <h3>Guía de Juego: League of Legends</h3>
+                <p>En esta guía, aprenderás consejos y estrategias para mejorar tu rendimiento en League of Legends.</p>
+                <ul>
+                    <li>
+                        Consejo 1: kiteo
+                        <video width="320" height="240" controls>
+                            <source src="kiteo.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </li>
+                    <li>
+                        Consejo 2: control de oleadas
+                        <video width="320" height="240" controls>
+                            <source src="control.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </li>
+                    <li>
+                        Consejo 3: consejos para wardear 
+                        <video width="320" height="240" controls>
+                            <source src="wardeo.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </li>
+                    <li>
+                        Consejo 4: como armar las runas
+                        <video width="320" height="240" controls>
+                            <source src="runas.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
