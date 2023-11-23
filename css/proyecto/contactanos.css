@@ -1,0 +1,93 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo pixel gamer */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal en pantallas pequeñas */
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.5s;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+/* Estilos para enlaces con hover */
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Estilos para header con hover */
+header:hover, nav:hover {
+    background-color: #222;
+}
+
+/* Estilos para el enlace de la página principal */
+#home-link a {
+    display: block;
+    color: #4CAF50;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+#home-link a:hover {
+    color: #45a049;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header, nav, section, footer {
+        padding: 15px;
+    }
+}
+
+/* Estilos para pantallas mas grandes (desktop) */
+@media only screen and (min-width: 1025px) {
+    header, nav, section, footer {
+        padding: 20px;
+    }
+}

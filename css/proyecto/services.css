@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d1f3a; 
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    transition: padding 0.5s;
+}
+
+header {
+    background-color: #45274b; 
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+header:hover {
+    background-color: #614276; /* Cambia el color al pasar el mouse sobre el encabezado */
+}
+
+#logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo {
+    font-size: 2em;
+    color: #9c7aed; 
+    transition: color 0.5s;
+}
+
+#logo:hover {
+    color: #b09eff; 
+}
+
+nav {
+    background-color: #543b5c; 
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #9c7aed; 
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    transition: padding 0.5s;
+}
+
+footer {
+    background-color: #45274b; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s, padding 0.5s;
+    clear: both;
+}
+
+.league {
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: #543b5c; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.league:hover {
+    background-color: #614276; 
+    transform: scale(1.05); 
+}
+
+.league img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+
+    .league {
+        margin: 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header, nav, section, footer {
+        padding: 15px;
+    }
+
+    .league {
+        margin: 15px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header, nav, section, footer {
+        padding: 20px;
+    }
+
+    .league {
+        margin: 20px;
+        box-sizing: border-box;
+    }
+}
