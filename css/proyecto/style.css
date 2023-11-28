@@ -28,7 +28,7 @@ header {
 #logo {
     font-size: 2em;
     color: #4CAF50;
-    transition: color 0.5s;
+    transition: color 0.1s;
     cursor: pointer;
 }
 
